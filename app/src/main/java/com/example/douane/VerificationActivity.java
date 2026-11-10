@@ -34,6 +34,7 @@ public class VerificationActivity extends AppCompatActivity {
         if ("Modification du passé".equals(motif) && estPremier(age)) {
             btnOk.setEnabled(false);
         }
+        if ("Modification du passé".equals(motif) && estPremier(Math.abs(age))) {
 
         btnOk.setOnClickListener(v -> lancer(true));
         btnNo.setOnClickListener(v -> lancer(false));
