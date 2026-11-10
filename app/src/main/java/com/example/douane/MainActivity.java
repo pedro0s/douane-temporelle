@@ -33,7 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show();
                 return;
             }
-
+            if (naiss.length() != 4 || dest.length() != 4) {
+    Toast.makeText(this, "Les années doivent avoir 4 chiffres", Toast.LENGTH_SHORT).show();
+    return;
+}
             // 3 - na9rawh
             String motif = ((RadioButton) findViewById(checked)).getText().toString();
 
